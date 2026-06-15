@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novena a São João Paulo II</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #FDF8F0;
+            color: #5D4037;
+        }
+
+        .active-day {
+            background-color: #A0C4FF !important;
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+
+        .prayer-text p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        .prayer-text h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #D7CCC8;
+            padding-bottom: 0.25rem;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#4E342E]">Novena a São João Paulo II</h1>
+            <p class="text-lg mt-2 text-gray-600">"O Amor Explicou Tudo!"</p>
+        </header>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+
+            <nav class="mb-8">
+                <ul id="day-navigation" class="flex flex-wrap justify-center gap-2">
+                </ul>
+            </nav>
+
+            <main id="content-area" class="prayer-text">
+            </main>
+
+        </div>
+
+        <footer class="text-center mt-8 text-sm text-gray-500">
+            <p>Desenvolvido com fé e devoção.</p>
+            <p>São João Paulo II, rogai por nós!</p>
+            <br>
+            <p>Desenvolvido por: Geovane Augusto.</p>
+
+        </footer>
+
+    </div>
+
+    <script>
+        const novenaData = [
+            {
+                day: 1,
+                titulo: "O Amor como Vocação",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4EeGaXDeDzwtDMbqkIcB9a?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "O homem não pode viver sem amor. Ele permanece para si mesmo um ser incompreensível, sua vida é destituída de sentido, se não lhe for revelado o amor, se não se encontra com o amor, se não o experimenta e se não o torna algo próprio, se dele não participa vivamente.",
+                reflexao: `
+                    <h3>Reflexão: Redemptor Hominis (O Redentor do Homem)</h3>
+                    <p>Em sua primeira encíclica, São João Paulo II nos recorda que o mistério do homem só se esclarece no mistério de Cristo, o novo Adão. É em Cristo que descobrimos nossa verdadeira identidade e a profundidade de nossa vocação ao amor. A juventude, em particular, é um tempo de descoberta, um período em que o coração anseia por um amor grande e verdadeiro. O Papa nos convida a não nos contentarmos com amores medíocres, mas a buscar em Cristo a medida do amor autêntico: um amor que é dom total de si, serviço e sacrifício. Peçamos a graça de compreender que fomos criados por amor e para amar.</p>
+                `
+            },
+            {
+                day: 2,
+                titulo: "A Família, Santuário do Amor",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2RC0Cw2XPu85sVYIMehzLj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "O futuro da humanidade passa pela família.",
+                reflexao: `
+                    <h3>Reflexão: Familiaris Consortio (A Missão da Família Cristã)</h3>
+                    <p>São João Paulo II defendia com vigor a família como a célula fundamental da sociedade e da Igreja. Ele a chamava de "igreja doméstica", um lugar onde se aprende a amar, a perdoar e a viver a fé. Para os jovens, a família é a primeira escola de virtudes e de amor. É no seio familiar que se experimenta o amor incondicional que nos prepara para os desafios da vida. Hoje, rezemos por todas as famílias, para que sejam verdadeiros santuários da vida e do amor, e para que os jovens encontrem nelas o apoio e o exemplo necessários para construir seus próprios futuros sobre a rocha do amor de Deus.</p>
+                `
+            },
+            {
+                day: 3,
+                titulo: "A Coragem da Juventude",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7eKujlfOXERpURflsGPY7g?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "Vós sois o sal da terra... Vós sois a luz do mundo. (...) A Igreja precisa da vossa energia, do vosso entusiasmo, dos vossos ideais juvenis para fazer penetrar o Evangelho no tecido da sociedade.",
+                reflexao: `
+                    <h3>Reflexão: Carta aos Jovens (Dilecti Amici)</h3>
+                    <p>Com um carinho paternal, São João Paulo II sempre se dirigiu aos jovens, vendo neles a esperança da Igreja e do mundo. Ele não os via com condescendência, mas os chamava a uma grande responsabilidade: ser protagonistas da nova evangelização. Ele os encorajava a não terem medo de seus ideais, de sonhar com um mundo mais justo e fraterno. A juventude não é apenas uma fase de transição, mas um tempo de graça, um dom precioso para viver com intensidade e coragem. Peçamos hoje, por intercessão do Papa dos Jovens, que a juventude de todo o mundo redescubra a alegria de seguir a Cristo e de ser luz para as nações.</p>
+                `
+            },
+            {
+                day: 4,
+                titulo: "A Misericórdia Divina",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2lPrtOzx9bI4kCMpt1msbZ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "Não existe miséria humana que supere a misericórdia de Deus.",
+                reflexao: `
+                    <h3>Reflexão: Dives in Misericordia (Rico em Misericórdia)</h3>
+                    <p>Um dos pilares do pontificado de São João Paulo II foi o anúncio da Divina Misericórdia, uma mensagem que ele recebeu através de Santa Faustina Kowalska. Ele nos ensinou que Deus é um Pai que nunca se cansa de perdoar e que está sempre de braços abertos para acolher o filho arrependido. Em um mundo que muitas vezes parece julgar e condenar, a misericórdia é o bálsamo que cura as feridas da alma. Para a juventude, que enfrenta tantas pressões e pode cair no desânimo, esta é uma verdade libertadora. Não importa o erro cometido, o amor misericordioso de Deus é sempre maior. Rezemos para que saibamos acolher e ser instrumentos dessa misericórdia no mundo.</p>
+                `
+            },
+            {
+                day: 5,
+                titulo: "O Corpo como Dom",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6aljWQma3nmiQEabGG8OoV?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "O corpo, e somente ele, é capaz de tornar visível o que é invisível: o espiritual e o divino. Ele foi criado para transferir para a realidade visível do mundo o mistério escondido desde a eternidade em Deus e, assim, ser um sinal d'Ele.",
+                reflexao: `
+                    <h3>Reflexão: A Teologia do Corpo</h3>
+                    <p>São João Paulo II nos deixou um tesouro inestimável com suas catequeses sobre a Teologia do Corpo. Ele nos ensinou a ver o corpo humano não como uma prisão ou um objeto de prazer, mas como um dom sagrado, um sinal visível do amor de Deus. Em um mundo que banaliza a sexualidade, o Papa nos convida a redescobrir a beleza do plano original de Deus para o amor humano. Para os jovens, compreender esta verdade é fundamental para viver a afetividade e a sexualidade de forma plena e integrada, como um caminho de santidade e de doação. Peçamos a graça de ver nosso corpo e o corpo do outro com os olhos puros de Deus.</p>
+                `
+            },
+            {
+                day: 6,
+                titulo: "A Entrega a Maria",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5SGen8WIHaCVREwhuqRxTT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "Totus Tuus! (Todo Teu!). Eu sou todo teu, ó Maria, e tudo o que é meu te pertence.",
+                reflexao: `
+                    <h3>Reflexão: Redemptoris Mater (A Mãe do Redentor)</h3>
+                    <p>A vida de Karol Wojtyla foi profundamente marcada por uma terna devoção a Nossa Senhora. Seu lema episcopal, "Totus Tuus", expressa sua total consagração a Maria. Ele nos ensinou que Maria não é um atalho que nos desvia de Cristo, mas o caminho mais seguro e rápido para chegar a Ele. Ela é a Mãe que nos acolhe, nos educa na fé e nos ensina a dizer "sim" à vontade de Deus, como ela mesma o fez. Para a juventude, que busca modelos e referências, Maria é o exemplo perfeito de fé, coragem e amor. Consagremos hoje nossa vida, nossos sonhos e nossas dificuldades a Maria, a Mãe dos jovens e nossa Mãe.</p>
+                `
+            },
+            {
+                day: 7,
+                titulo: "A Defesa da Vida",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6TWQm2fDbMAsQfI2XFibQk?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "A vida humana deve ser respeitada e protegida, de modo absoluto, a partir do momento da concepção. Desde o primeiro instante de sua existência, o ser humano deve ver reconhecidos os seus direitos de pessoa, entre os quais o direito inviolável de cada ser inocente à vida.",
+                reflexao: `
+                    <h3>Reflexão: Evangelium Vitae (O Evangelho da Vida)</h3>
+                    <p>Com voz profética, São João Paulo II denunciou a "cultura da morte" presente em nosso tempo e proclamou com vigor o "Evangelho da Vida". Ele nos chamou a ser um "povo da vida e para a vida", defendendo cada ser humano desde a concepção até a morte natural. Esta não é uma questão meramente política ou social, mas uma exigência fundamental do Evangelho. Os jovens, com seu idealismo e amor pela justiça, são chamados a estar na vanguarda desta luta pela dignidade de toda vida humana. Peçamos a coragem de ser testemunhas da vida em nossas palavras, em nossas ações e em nossas escolhas diárias.</p>
+                `
+            },
+            {
+                day: 8,
+                titulo: "A Vocação de cada um",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70gjgP4agt8DpgBdHjSquh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "A vocação é um convite que Deus dirige a cada um de nós, é a história de amor que Ele quer realizar conosco. É preciso ter um coração que escuta para poder ouvir a Sua voz.",
+                reflexao: `
+                    <h3>Reflexão: Pastores Dabo Vobis (Dar-vos-ei Pastores)</h3>
+                    <p>Deus tem um sonho de amor para cada um de seus filhos. Esse sonho é o que chamamos de vocação. Seja no matrimônio, no sacerdócio, na vida consagrada ou como leigo no mundo, todos somos chamados à santidade e a uma missão específica. São João Paulo II insistia que a juventude é o tempo privilegiado para o discernimento vocacional. É preciso silenciar o coração, rezar e pedir ao Espírito Santo a luz para compreender o caminho que Deus preparou para nós. A felicidade não está em fazer o que queremos, mas em querer o que Deus quer para nós. Rezemos hoje por todos os jovens, para que abram seus corações ao chamado de Deus com generosidade e alegria.</p>
+                `
+            },
+            {
+                day: 9,
+                titulo: "A Esperança Cristã",
+                musica: `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4EeGaXDeDzwtDMbqkIcB9a?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+                frasedoDia: "A esperança é a capacidade de ver a luz de Deus na escuridão da vida.",
+                reflexao: `
+                    <h3>Reflexão: Spe Salvi (Salvos na Esperança) - Inspirado em seu pensamento</h3>
+                    <p>Ao longo de todo o seu pontificado, mesmo enfrentando a doença e as dificuldades, São João Paulo II foi uma testemunha incansável da esperança. Uma esperança que não era um otimismo vazio, mas a certeza que nasce da fé na Ressurreição de Cristo. Ele nos ensinou que, por mais escura que seja a noite, a luz de Cristo já venceu. A morte, o sofrimento e o mal não têm a última palavra. Esta mensagem é especialmente poderosa para a juventude, que por vezes pode se sentir perdida ou sem perspectivas. Com São João Paulo II, aprendemos a fixar nosso olhar em Cristo, nossa esperança, e a caminhar com a certeza de que o futuro pertence a Deus. Que a nossa vida seja um reflexo dessa esperança que não decepciona.</p>
+                `
+            },
+        ];
+
+        const contentArea = document.getElementById('content-area');
+        const dayNavigation = document.getElementById('day-navigation');
+
+        function displayDay(dayNumber) {
+            const dayData = novenaData.find(d => d.day === dayNumber);
+            if (!dayData) return;
+
+            contentArea.innerHTML = `
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-bold text-[#8D6E63]">Dia ${dayData.day}: ${dayData.titulo}</h2>
+                </div>
+
+                <h3>Oração Inicial</h3>
+                <p>Ó Trindade Santa, nós Vos agradecemos por ter dado à Igreja o Papa João Paulo II e por ter feito resplandecer nele a ternura da Vossa Paternidade, a glória da Cruz de Cristo e o esplendor do Espírito de amor. Concedei-nos, por sua intercessão, a graça que imploramos (<em>pedir a graça</em>), na esperança de que ele seja logo contado no número dos Vossos Santos. Amém.</p>
+                
+                
+                
+                <div class="my-6 p-4 bg-[#F5F5F5] rounded-lg border-l-4 border-[#A0C4FF]">
+                    <h3 class="mt-0">Frase do Dia</h3>
+                    <p class="text-lg italic">"${dayData.frasedoDia}"</p>
+                </div>
+                
+                ${dayData.reflexao}
+                
+                <h3>Oração e Pedidos</h3>
+                <p>Neste momento de silêncio, apresentemos a Deus nossas intenções, confiando na intercessão de São João Paulo II.</p>
+                <p><em>Pai Nosso... Ave Maria... Glória ao Pai...</em></p>
+
+                <h3>Oração Final</h3>
+                <p>Ó Amigo da juventude, abençoe os jovens,
+que também foram tua grande paixão.
+Ajude-nos a voltar a sonhar,
+voltar a dirigir o olhar ao alto para que encontremos a luz que ilumina os caminhos da vida na terra.
+Que possamos nos unir à Vossa santa Igreja e a Ti rezando:
+<br>
+<br>
+<em>Vinde, ó Criador Espírito, visitai as mentes de vossos fiéis, enchei de graça superior os corações que criastes.
+<br>
+ <b>(Todos)</b></em>
+<br>
+<br>
+Ó João Paulo II, da janela do céu, onde te vemos junto a Maria,
+faze descer sobre todos nós a bênção de Deus!
+<br>
+<b>Amém</b>
+<br>
+<br>
+<b>Estivemos e sempre estaremos aqui reunidos em nome do Pai, Filho e do Espirito Santo.</b>
+</p>
+<br>
+            `;
+        
+                if (dayData.musica) {
+                    contentArea.innerHTML += `
+                        <h3 class="mt-0">Música do Dia</h3>
+                        ${dayData.musica}
+
+                    `;
+                }
+
+            updateActiveButton(dayNumber);
+        }
+
+        function updateActiveButton(dayNumber) {
+            const buttons = dayNavigation.querySelectorAll('button');
+            buttons.forEach(button => {
+                if (parseInt(button.dataset.day) === dayNumber) {
+                    button.classList.add('active-day');
+                } else {
+                    button.classList.remove('active-day');
+                }
+            });
+        }
+
+        function initializeNovena() {
+            for (let i = 1; i <= 9; i++) {
+                const li = document.createElement('li');
+                const button = document.createElement('button');
+                button.textContent = `Dia ${i}`;
+                button.dataset.day = i;
+                button.className = 'px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors duration-200';
+                button.addEventListener('click', () => displayDay(i));
+                li.appendChild(button);
+                dayNavigation.appendChild(li);
+            }
+            displayDay(1);
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeNovena);
+    </script>
+
+</body>
+
+</html>
